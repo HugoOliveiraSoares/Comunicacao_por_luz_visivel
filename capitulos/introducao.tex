@@ -1,5 +1,19 @@
-\section{Introdução}
+\chapter{Introdução}
 
-Este texto já se encontra no padrão de espaçamento correto. Ao elaborar o seu conteúdo, verificar se o espaçamento entre linhas é de 1,5 e se há uma linha livre entre parágrafos com espaçamento 0 pt antes e depois.
+Com o aumento da popularidade da internet em todo o mundo, é notável que as redes WiFi têm crescido significativamente, juntamente com o número de usuários e de dispositivos IoT (Internet Of Things). De acordo com o relatório Digital 2023: Global Overview Report, publicado pelo site Datareportal, há cerca de 5,16 bilhões de usuários da internet atualmente. No entanto, esse aumento na demanda por WiFi tem causado um problema, que é a congestão das faixas do espectro eletromagnético reservadas para essas redes, assim afetando a sua eficiência.
 
-Pode conter o tema, a justificativa, as questões ou hipóteses – formulação, delimitação, problema específico a resolver quanto ao tema no decorrer da pesquisa (o que será pesquisado; a “pergunta”); justificativa, segundo os critérios habituais: relevância; originalidade (a necessidade de incluir este item na pesquisa normalmente exigirá uma exposição do que já foi feito acerca do tema, ou de temas próximos, no contexto da disciplina em que a pesquisa se desenvolve, ou de disciplinas diferentes, mas pertinentes ao tema em questão); viabilidade; interesse pessoal (por que escolheu esse problema); e objetivos (estes podem ser apresentados em item separado, após a introdução ou no texto da introdução). A redação dos objetivos deve ser extremamente breve quanto ao que se pretende obter nos diversos níveis que forem pertinentes para a realização da pesquisa em questão. Tal exposição deve ser inteligível mesmo para pessoas não especializadas na disciplina em cujo contexto se formula e se realiza a pesquisa. 
+\begin{figure}[htb]
+  \centering
+  \caption{Indicadores de uso da Internet}
+  \includegraphics[scale=0.45]{images/internet_use.png}
+  \legend{Fonte: \citeonline{Datareportal}}
+  \label{figura:usoInternet}
+\end{figure}
+
+As redes  wireless utilizam ondas eletromagnéticas para a transmissão de dados e informações, o que inviabiliza ou dificulta a sua utilização em alguns lugares, como em hospitais e aeronaves, por exemplo, por interferir com equipamentos hospitalares e com a antena de transmissão no caso dos voos.
+
+Se deparando com esses cenários, o Visible Light Communication (VLC) se mostra como um forte candidato para a solução destes problemas. Pois percebemos que o espectro da luz visível, possui 10 mil vezes mais faixas de frequência se comparado com as ondas de rádio, \citeonline[p. 14]{conceiccao2015comunicaccao}. Ou seja, é possível que um único “roteador” se comunique com mais dispositivos ao mesmo tempo.
+Para o problema de interferência o VLC também é uma solução, visto que utiliza a luz visível como forma de transmitir as informações, assim não gerando interferências eletromagnéticas em outros aparelhos eletrônicos ou em redes wifi.
+
+Assim, o estudo objetiva verificar a viabilidade de implementação do sistema VLC com o mini-computador Raspberry Pi, através da construção de um protótipo. A pesquisa experimental surgiu da necessidade de uma nova forma de transmissão de dados com pouca interferência e de baixo custo. Abrindo uma  possibilidade de levar comunicação em locais onde não era possível recorrer a uma rede wireless.
+

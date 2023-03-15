@@ -1,4 +1,4 @@
-\documentclass[12pt,article,a4paper,english,brazil]{abntex2}
+\documentclass[12pt,a4paper,english,brazil]{abntex2}
 
 \usepackage[brazil]{babel}
 \usepackage[left=3.0cm,top=3.0cm,right=2.0cm,bottom=2.0cm]{geometry}
@@ -8,11 +8,13 @@
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage[alf]{abntex2cite}	% CITAÇÕES PADRÃO ABNT
 \usepackage{fontspec}
+\usepackage{url}
 \setmainfont{Arial}
 
 % O tamanho do parágrafo(recuo) é dado por:
 \setlength{\parindent}{1.25cm}
 \linespread{1.5}
+% \OnehalfSpacing
 
 \selectlanguage{brazil}
 
@@ -21,7 +23,7 @@
       pdftitle={\@title}, 
 		  pdfauthor={\@author},
 	    pdfcreator={Hugo Soares},
-      pdfkeywords={VLC}{Visible Light Communication}{Raspberripy}{Dom Helder},
+      pdfkeywords={VLC}{Visible Light Communication}{Raspberripy}{Dom Helder}{OpenVLC},
   		colorlinks=true,
     	citecolor=black,
       linkcolor=black,
@@ -32,11 +34,11 @@
 \addto\captionsbrazil{
 %% ajusta nomes padroes do babel
 \renewcommand{\bibname}{Referências}
-\renewcommand{\indexname}{Índice}
+\renewcommand{\indexname}{Indice}
 \renewcommand{\listfigurename}{Lista de ilustrações}
 \renewcommand{\listtablename}{Lista de tabelas}
 %% ajusta nomes usados com a macro \autoref
-\renewcommand{\pageautorefname}{página}
+\renewcommand{\pageautorefname}{pagina}
 \renewcommand{\sectionautorefname}{seção}
 \renewcommand{\subsectionautorefname}{subseção}
 \renewcommand{\paragraphautorefname}{parágrafo}
@@ -47,7 +49,7 @@
 
 \begin{document}
   
-  \titulo{VLC(Visible Light Communication)}
+  \titulo{Comunicação por luz visível: \\ Construção de um protótipo com Raspberry Pi para explorar o potencial da tecnologia VLC}
   \autor{Hugo Oliveira Soares}
   \local{Belo Horizonte}
   \instituicao{Dom Helder Escola Superior}
