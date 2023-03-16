@@ -2,6 +2,7 @@
 
 \usepackage[brazil]{babel}
 \usepackage[left=3.0cm,top=3.0cm,right=2.0cm,bottom=2.0cm]{geometry}
+\usepackage{setspace}
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{xcolor}
@@ -65,6 +66,7 @@
     Orientador de metodologia: \imprimircoorientador
   }
 
+  \pagenumbering{roman}
   % PARTE PRÉ-TEXTUAL
   \include{capa} 
   \include{folharosto}
@@ -72,10 +74,13 @@
   \imprimirfolhaderosto
 
   \listoffigures
+\cleardoublepage
   \include{siglas}
   \newpage
   \tableofcontents %SUMARIO
 
+  \pagenumbering{arabic}
+  % \textual
   %% CAPITULOS
   \include{capitulos/introducao}
   % \include{capitulos/hipoteses}
@@ -85,5 +90,6 @@
   % \include{capitulos/metodologia}
 
   \bibliography{referencias}
+  \nocite{OpenVLC, matheus2017comunicaccao}
 
 \end{document}
