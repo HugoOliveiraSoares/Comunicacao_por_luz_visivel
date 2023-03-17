@@ -1,13 +1,26 @@
-\documentclass[12pt,a4paper,english,brazil]{abntex2}
+\documentclass[12pt,
+a4paper,
+openany,
+oneside,
+brazil,
+]{abntex2}
 
 \usepackage[brazil]{babel}
-\usepackage[left=3.0cm,top=3.0cm,right=2.0cm,bottom=2.0cm]{geometry}
+\usepackage[left=3cm,top=3cm,right=2cm,bottom=2cm]{geometry}
 \usepackage{setspace}
+\usepackage{caption}
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{microtype} 			% para melhorias de justificação
-\usepackage[alf]{abntex2cite}	% CITAÇÕES PADRÃO ABNT
+\usepackage[alf, 
+  abnt-emphasize = bf,
+  abnt-etal-list = 2,
+  abnt-etal-cite = 2,
+  bibjustif,
+  abnt-etal-text=default
+  % abnt-etal-text=it
+  ]{abntex2cite}	% CITAÇÕES PADRÃO ABNT
 \usepackage{fontspec}
 \usepackage{url}
 \setmainfont{Arial}
@@ -15,7 +28,6 @@
 % O tamanho do parágrafo(recuo) é dado por:
 \setlength{\parindent}{1.25cm}
 \linespread{1.5}
-% \OnehalfSpacing
 
 \selectlanguage{brazil}
 
@@ -24,63 +36,66 @@
       pdftitle={\@title}, 
 		  pdfauthor={\@author},
 	    pdfcreator={Hugo Soares},
-      pdfkeywords={VLC}{Visible Light Communication}{Raspberripy}{Dom Helder}{OpenVLC},
+      pdfkeywords={VLC}{Visible Light Communication}{RaspberriPy}{Dom Helder}{OpenVLC},
   		colorlinks=true,
     	citecolor=black,
       linkcolor=black,
-      urlcolor=blue,
+      urlcolor=black,
 	    bookmarksdepth=4
 }
 
-\addto\captionsbrazil{
-%% ajusta nomes padroes do babel
-\renewcommand{\bibname}{Referências}
-\renewcommand{\indexname}{Indice}
-\renewcommand{\listfigurename}{Lista de ilustrações}
-\renewcommand{\listtablename}{Lista de tabelas}
-%% ajusta nomes usados com a macro \autoref
-\renewcommand{\pageautorefname}{pagina}
-\renewcommand{\sectionautorefname}{seção}
-\renewcommand{\subsectionautorefname}{subseção}
-\renewcommand{\paragraphautorefname}{parágrafo}
-\renewcommand{\subsubsectionautorefname}{subseção}
-}
+\renewcommand\printchaptertitle[1]{%
+    \chaptitlefont%
+    \ifthenelse{\boolean{abntex@innonumchapter}}{\ABNTEXchapterupperifneeded{#1}}{%
+    \ifthenelse{\boolean{abntex@apendiceousecao}}{%
+        \centering%
+        \settowidth{\chapternamenumlength}{\printchaptername\printchapternum\afterchapternum}%
+        \ABNTEXchapterupperifneeded{#1}%
+      }{%
+        \settowidth{\chapternamenumlength}{\printchaptername\printchapternum\afterchapternum}%
+        \parbox[t]{\columnwidth-\chapternamenumlength}{\ABNTEXchapterupperifneeded{#1}}}%
+     }   
+  }
 
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+\titulo{Comunicação por luz visível: \\ Construindo um protótipo com Raspberry Pi e explorando o potencial da tecnologia VLC}
+\autor{Hugo Oliveira Soares}
+\local{Belo Horizonte}
+\instituicao{DOM HELDER ESCOLA SUPERIOR}
+\orientador{Prof. Marden Cicarelli Pinheiro}
+\coorientador{Prof. Ricardo Luiz de Freitas}
+\preambulo{
+  Projeto de Pesquisa apresentado à Dom Helder Escola Superior como requisito parcial para obtenção do título de Cientista da Computação.
+  \newline 
+  \newline
+  Orientador de conteúdo: \imprimirorientador
+  \newline
+  \newline
+  Orientador de metodologia: \imprimircoorientador
+}
 \data{2023}
 
 \begin{document}
-  
-  \titulo{Comunicação por luz visível: \\ Construção de um protótipo com Raspberry Pi para explorar o potencial da tecnologia VLC}
-  \autor{Hugo Oliveira Soares}
-  \local{Belo Horizonte}
-  \instituicao{Dom Helder Escola Superior}
-  \orientador{Prof. Marden Cicarelli Pinheiro}
-  \coorientador{Prof. Ricardo Luiz de Freitas}
-  \preambulo{
-    Projeto de Pesquisa apresentado à Dom Helder Escola Superior como requisito parcial para obtenção do título de Cientista da Computação.
-    \newline 
-    \newline
-    Orientador de conteúdo: \imprimirorientador
-    \newline
-    \newline
-    Orientador de metodologia: \imprimircoorientador
-  }
 
-  \pagenumbering{roman}
   % PARTE PRÉ-TEXTUAL
+  \pagenumbering{roman}
+  \pretextual
   \include{capa} 
-  \include{folharosto}
   \imprimircapa
+  \clearpage
+  \include{folharosto}
   \imprimirfolhaderosto
 
-  \listoffigures
-\cleardoublepage
-  \include{siglas}
-  \newpage
-  \tableofcontents %SUMARIO
+  % \listoffigures % Lista de imagens
+  % \include{siglas} % Lista de abreviaturas e siglas
+  % \clearpage
+  % \tableofcontents %SUMARIO
+  \clearpage
 
+  % PARTE TEXTUAL
   \pagenumbering{arabic}
-  % \textual
+  \textual
   %% CAPITULOS
   \include{capitulos/introducao}
   % \include{capitulos/hipoteses}
@@ -89,7 +104,8 @@
   % \include{capitulos/referencialTeorico}
   % \include{capitulos/metodologia}
 
+  % Referencias
   \bibliography{referencias}
-  \nocite{OpenVLC, matheus2017comunicaccao}
+  \nocite{OpenVLC, matheus2017comunicaccao, ondas, datareportal}
 
 \end{document}

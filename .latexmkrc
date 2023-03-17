@@ -1,1 +1,1 @@
-$pdflatex = 'lualatex %O %S'
+$pdflatex = 'xelatex %O %S'

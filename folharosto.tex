@@ -2,7 +2,8 @@
 \renewcommand{\folhaderostocontent}{
   \begin{center}
 
-    \vspace*{\fill}
+    {\ABNTEXchapterfont\large\imprimirautor}
+
     \vspace*{\fill}
     \begin{center}
       \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
@@ -13,7 +14,7 @@
     \abntex@ifnotempty{\imprimirpreambulo}{
       \hspace{.45\textwidth}
       \begin{minipage}{.5\textwidth}
-        \SingleSpacing
+          \SingleSpacing
           \ABNTEXfontereduzida
           \imprimirpreambulo
       \end{minipage}
@@ -26,7 +27,7 @@
     \imprimirlocal
     \par
     \imprimirdata
-    % \vspace*{1cm}
+    \vspace*{1cm}
 
     \end{center}
 }

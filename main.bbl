@@ -1,0 +1,32 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Concei{\c{c}}{\~a}o 2015]{conceiccao2015comunicaccao}
+\abntrefinfo{Concei{\c{c}}{\~a}o}{CONCEI{\c{C}}{\~A}O}{2015}
+    {CONCEI{\c{C}}{\~A}O, M.~L. \textbf{Comunica{\c{c}}{\~a}o por luz vis{\'\i}vel.}
+Brasília, 2015.}
+
+\bibitem[Galisteo et al. 2019]{OpenVLC}
+\abntrefinfo{Galisteo et al.}{GALISTEO et al.}{2019}
+{GALISTEO, A. et al. Research in visible light communication systems with openvlc1.3.
+\textbf{The Institute of Electrical and Electronics Engineers, Inc.(IEEE) Conference Proceedings}, 2019.
+Dispon{\'\i}vel em: \url{https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/685/Final.pdf?sequence=1&isAllowed=y}.}
+
+\bibitem[Kemp 2023]{datareportal}
+\abntrefinfo{Kemp}{KEMP}{2023}
+{KEMP, S. \textbf{Digital 2023: Global Overview Report - DataReportal – Global Digital Insights}. DataReportal – Global Digital Insights, 2023.
+Dispon{\'\i}vel em: \url{https://datareportal.com/reports/digital-2023-global-overview-report}. Acesso em: 15 mar. 2023.}
+
+\bibitem[Matheus et al. 2017]{matheus2017comunicaccao}
+\abntrefinfo{Matheus et al.}{MATHEUS et al.}{2017}
+{MATHEUS, L. et al. \textbf{Comunica{\c{c}}{\~a}o por luz vis{\'\i}vel: conceito, aplicações e desafios}. SBRC-Minicursos, 2017.}
+
+\bibitem[Oliveira 2017]{ondas}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2017}
+{OLIVEIRA, N.~F. de. \textbf{F{\'\i}sica Ondas}. São Paulo: Sistema COC de ensino, 2017.}
+
+\end{thebibliography}
