@@ -5,36 +5,77 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Barros 2014]{barros}
+\abntrefinfo{Barros}{BARROS}{2014}
+{BARROS, J. J.~R.
+\textbf{Efeitos da interferência gerada por fornos de micro-ondas nas redes sem fio IEEE 802.11b/g/n}.
+Disserta\c{c}\~{a}o (Mestrado) --- Instituto Federal de Educação, Ciência e Tecnologia da Paraíba, João Pessoa, Oct 2014.}
+
+\bibitem[Cabral 2001]{cabral}
+\abntrefinfo{Cabral}{CABRAL}{2001}
+{CABRAL, S. C.~B.
+\textbf{Interferência eletromagnética em equipamento eletromédico ocasionada por telefonia móvel celular}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Estadual de Campinas, Campinas, Jun 2001.}
+
 \bibitem[Concei{\c{c}}{\~a}o 2015]{conceiccao2015comunicaccao}
 \abntrefinfo{Concei{\c{c}}{\~a}o}{CONCEI{\c{C}}{\~A}O}{2015}
-{CONCEI{\c{C}}{\~A}O, M.~L. \textbf{Comunica{\c{c}}{\~a}o por luz vis{\'\i}vel.}
-Brasília, 2015.}
+{CONCEI{\c{C}}{\~A}O, M.~L.
+\textbf{Comunica{\c{c}}{\~a}o por Luz Vis{\'\i}vel}.
+Monografia (TCC) --- Universidade de Brasília, Brasília, 2015.}
+
+\bibitem[Foundation 2018]{rasp}
+\abntrefinfo{Foundation}{FOUNDATION}{2018}
+{FOUNDATION, R.~P. \textbf{Strategy 2018–2020}. Raspberry Pi. Raspberry Pi Foundation, 2018.
+Dispon{\'\i}vel em: \url{https://static.raspberrypi.org/files/about/RaspberryPiFoundationStrategy2018\%E2\%80\%932020.pdf}. Acesso em: 22 abr. 2023.}
 
 \bibitem[Galisteo et al. 2019]{OpenVLC}
 \abntrefinfo{Galisteo et al.}{GALISTEO et al.}{2019}
-{GALISTEO, A. et al. Research in visible light communication systems with
-  openvlc1.3.
-\textbf{The Institute of Electrical and Electronics Engineers, Inc.(IEEE)
-  Conference Proceedings}, 2019.
-Dispon{\'\i}vel em:
-  \url{https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/685/Final.pdf?sequence=1&isAllowed=y}.}
+{GALISTEO, A. et al. Research in visible light communication systems with openvlc1.3.
+\textbf{The Institute of Electrical and Electronics Engineers, Inc.(IEEE) Conference Proceedings}, 2019.
+Dispon{\'\i}vel em: \url{https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/685/Final.pdf?sequence=1&isAllowed=y}.}
+
+\bibitem[Genachowski 2013]{fcc}
+\abntrefinfo{Genachowski}{GENACHOWSKI}{2013}
+{GENACHOWSKI. \textbf{Revision of Part 15 of the Commission's Rules to Permit Unlicensed National Information Infrastructure (U-NII) Devices in the 5 GHz Band}. FCC - Federal Communications Commission, 2013.
+Dispon{\'\i}vel em: \url{https://www.fcc.gov/document/5-ghz-unlicensed-spectrum-unii}. Acesso em: 17 abr. 2023.}
 
 \bibitem[Kemp 2023]{datareportal}
 \abntrefinfo{Kemp}{KEMP}{2023}
-{KEMP, S. \textbf{Digital 2023: Global Overview Report - DataReportal –
-  Global Digital Insights}. DataReportal – Global Digital Insights, 2023.
-Dispon{\'\i}vel em:
-  \url{https://datareportal.com/reports/digital-2023-global-overview-report}.
-  Acesso em: 15 mar. 2023.}
+{KEMP, S. \textbf{Digital 2023: Global Overview Report - DataReportal – Global Digital Insights}. DataReportal – Global Digital Insights, 2023.
+Dispon{\'\i}vel em: \url{https://datareportal.com/reports/digital-2023-global-overview-report}. Acesso em: 15 mar. 2023.}
 
 \bibitem[Matheus et al. 2017]{matheus2017comunicaccao}
 \abntrefinfo{Matheus et al.}{MATHEUS et al.}{2017}
-{MATHEUS, L. et al. \textbf{Comunica{\c{c}}{\~a}o por luz vis{\'\i}vel:
-  conceito, aplicações e desafios}. SBRC-Minicursos, 2017.}
+{MATHEUS, L. et al. Comunica{\c{c}}{\~a}o por luz vis{\'\i}vel: conceito, aplicações e desafios. In:  \textbf{Livro de Minicursos SBRC}. Minas Gerais: Sociedade Brasileira de Computação, 2017. cap.~6, p. 247--296.}
+
+\bibitem[Neto et al. 2021]{SBC_edu}
+\abntrefinfo{Neto et al.}{NETO et al.}{2021}
+{NETO, J.~V. C. et al. Single-board computers na educação: Uma revisão sistemática da literatura.
+\textbf{Research, Society and Development}, v.~10, n.~7, Jun 2021.}
 
 \bibitem[Oliveira 2017]{ondas}
 \abntrefinfo{Oliveira}{OLIVEIRA}{2017}
-{OLIVEIRA, N.~F. de. \textbf{F{\'\i}sica Ondas}. São Paulo: Sistema COC de
-  ensino, 2017.}
+{OLIVEIRA, N.~F. de. \textbf{F{\'\i}sica Ondas}. São Paulo: Sistema COC de ensino, 2017.}
+
+\bibitem[Orangepi]{orangepi}
+\abntrefinfo{Orangepi}{ORANGEPI}{}
+{ORANGEPI. \textbf{Products}.
+Dispon{\'\i}vel em: \url{http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/index.html}. Acesso em: 22 abr. 2023.}
+
+\bibitem[RaspberryPi]{rasp_prod}
+\abntrefinfo{RaspberryPi}{RASPBERRYPI}{}
+{RASPBERRYPI. \textbf{Buy A raspberry pi}.
+Dispon{\'\i}vel em: \url{https://www.raspberrypi.com/products/}. Acesso em: 22 abr. 2023.}
+
+\bibitem[Tanenbaum 2011]{tanenbaum}
+\abntrefinfo{Tanenbaum}{TANENBAUM}{2011}
+{TANENBAUM, S. \textbf{Redes de computadores}. Upper Saddle River, NJ, USA: Pearson, 2011.
+ISBN 9788576059240.}
+
+\bibitem[Wang et al. 2015]{OpenVLCB}
+\abntrefinfo{Wang et al.}{WANG et al.}{2015}
+{WANG, Q. et al. Low-cost, flexible and open platform for visible light communication networks.
+\textbf{ACM HotWireless 2015}, 2015.
+Dispon{\'\i}vel em: \url{https://dl.acm.org/doi/pdf/10.1145/2799650.2799655}.}
 
 \end{thebibliography}
