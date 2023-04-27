@@ -23,11 +23,6 @@ Disserta\c{c}\~{a}o (Mestrado) --- Universidade Estadual de Campinas, Campinas, 
 \textbf{Comunica{\c{c}}{\~a}o por Luz Vis{\'\i}vel}.
 Monografia (TCC) --- Universidade de Brasília, Brasília, 2015.}
 
-\bibitem[Foundation 2018]{rasp}
-\abntrefinfo{Foundation}{FOUNDATION}{2018}
-{FOUNDATION, R.~P. \textbf{Strategy 2018–2020}. Raspberry Pi. Raspberry Pi Foundation, 2018.
-Dispon{\'\i}vel em: \url{https://static.raspberrypi.org/files/about/RaspberryPiFoundationStrategy2018\%E2\%80\%932020.pdf}. Acesso em: 22 abr. 2023.}
-
 \bibitem[Galisteo et al. 2019]{OpenVLC}
 \abntrefinfo{Galisteo et al.}{GALISTEO et al.}{2019}
 {GALISTEO, A. et al. Research in visible light communication systems with openvlc1.3.
@@ -57,15 +52,15 @@ Dispon{\'\i}vel em: \url{https://datareportal.com/reports/digital-2023-global-ov
 \abntrefinfo{Oliveira}{OLIVEIRA}{2017}
 {OLIVEIRA, N.~F. de. \textbf{F{\'\i}sica Ondas}. São Paulo: Sistema COC de ensino, 2017.}
 
-\bibitem[Orangepi]{orangepi}
-\abntrefinfo{Orangepi}{ORANGEPI}{}
-{ORANGEPI. \textbf{Products}.
-Dispon{\'\i}vel em: \url{http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/index.html}. Acesso em: 22 abr. 2023.}
+\bibitem[OrangePi 2023]{orangepi}
+\abntrefinfo{OrangePi}{ORANGEPI}{2023}
+{ORANGEPI. \textbf{Orange Pi}. 2023.
+Dispon{\'\i}vel em: \url{http://www.orangepi.org/orangepiwiki/index.php/Main\_Page}.}
 
-\bibitem[RaspberryPi]{rasp_prod}
-\abntrefinfo{RaspberryPi}{RASPBERRYPI}{}
-{RASPBERRYPI. \textbf{Buy A raspberry pi}.
-Dispon{\'\i}vel em: \url{https://www.raspberrypi.com/products/}. Acesso em: 22 abr. 2023.}
+\bibitem[RaspberryPiFoundation 2018]{rasp}
+\abntrefinfo{RaspberryPiFoundation}{RASPBERRYPIFOUNDATION}{2018}
+{RASPBERRYPIFOUNDATION. \textbf{Strategy 2018–2020}. Raspberry Pi Foundation, 2018.
+Dispon{\'\i}vel em: \url{https://static.raspberrypi.org/files/about/RaspberryPiFoundationStrategy2018\%E2\%80\%932020.pdf}. Acesso em: 22 abr. 2023.}
 
 \bibitem[Tanenbaum 2011]{tanenbaum}
 \abntrefinfo{Tanenbaum}{TANENBAUM}{2011}
@@ -77,5 +72,10 @@ ISBN 9788576059240.}
 {WANG, Q. et al. Low-cost, flexible and open platform for visible light communication networks.
 \textbf{ACM HotWireless 2015}, 2015.
 Dispon{\'\i}vel em: \url{https://dl.acm.org/doi/pdf/10.1145/2799650.2799655}.}
+
+\bibitem[Zeng 2022]{zeng_2022}
+\abntrefinfo{Zeng}{ZENG}{2022}
+{ZENG, X. \textbf{Porque é que os preços do Raspberry Pi São Tão Altos? Irá Melhorar?} 2022.
+Dispon{\'\i}vel em: \url{https://picockpit.com/raspberry-pi/pt/porque-are-raspberry-pi-prices-so-high-will-it-improve/}.}
 
 \end{thebibliography}
