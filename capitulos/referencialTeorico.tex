@@ -16,7 +16,7 @@ Se duas ondas senoidais de mesmo comprimento de onda são propagadas em uma cord
 
 \begin{figure}[!htbp]
   \caption{Demonstração das ondas resultantes}
-  \includegraphics[scale=0.55]{images/ondas_interferencia.png}
+  \includegraphics[scale=0.5]{images/ondas_interferencia.png}
   \legend{Fonte: \citeonline{fisica}}
   \label{fig:ondas_inter}
 \end{figure}
@@ -32,7 +32,7 @@ Sistemas VLC são caracterizados por se comunicar utilizando a luz visível para
 
 \begin{figure}[!htbp]
   \caption{O espectro eletromagnético}
-  \includegraphics[scale=0.6]{images/espectro_eletromagnetico.png}
+  \includegraphics[scale=0.65]{images/espectro_eletromagnetico.png}
   \legend{Fonte: \citeonline{fisica}}
   \label{fig:espectro_eletromagnetico}
 \end{figure}
@@ -65,16 +65,26 @@ Esta forma de modulação transmite os bits acendendo e apagando a lampada, mas 
 
 \subsubsection{Color Shift Keying (CSK)}
 
+O sinal é modulado através da intensidade de 3 cores, sendo elas vermelho, verde e azul, essas três cores juntas geram a luz branca. Como cita \citeauthoronline{matheus2017comunicaccao} a modulação OOK possui taxas de envio muito baixas por isso esta modulação foi proposta especificamente para o VLC \cite{matheus2017comunicaccao}. 
+
+A modulação é feita relacionando cada bit a uma cor das coordenadas CIE 1931, \citeauthoronline{Abraham_2016} explica que é um sistema de correspondência de cores que permite especificar numericamente uma cor com o objetivo de reproduzi-la com precisão. Existem 7 bandas de comprimento que podem ser selecionadas para determinar as vértices de um triângulo no qual os pontos da constelação dos símbolos CSK estão. Cada ponto selecionado determina a intensidade da cor no led RGB \cite{matheus2017comunicaccao}.
+
+\begin{figure}[!htbp]
+  \caption{Diagrama de cromaticidade CIE 1931}
+  \includegraphics[scale=0.4]{images/csk.png}
+  \legend{Fonte: \apudonline{monteiro}{matheus2017comunicaccao} }
+  \label{fig:}
+\end{figure}
 
 
 \section{OpenVLC}
 
 O OpenVLC é uma plataforma \textit{open source} baseada em  Linux e na plataforma Beagle Bone Black (BBB), projetada para ser de baixo custo e ser utilizada em pesquisas de redes VLC. O projeto consiste em um \textit{hardware} para a transmissão e recepção e sua implementação de \textit{software} atua na camada de enlace \cite{OpenVLCB}.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \begin{minipage}{0.4\textwidth}
     \caption{Diagrama do hardware do OpenVLC}
-    \includegraphics[scale=0.55]{images/diagram_cape_OpenVLC.png}
+    \includegraphics[scale=0.6]{images/diagram_cape_OpenVLC.png}
     \legend{Fonte: \citeonline{OpenVLCB}}
     \label{figura:diagramaVLC}
   \end{minipage}

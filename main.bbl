@@ -5,11 +5,21 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Abraham 2016]{Abraham_2016}
+\abntrefinfo{Abraham}{ABRAHAM}{2016}
+{ABRAHAM, C. \textbf{A beginner’s guide to (CIE) colorimetry}. Medium, 2016.
+Dispon{\'\i}vel em: \url{https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a}.}
+
 \bibitem[Barros 2014]{barros}
 \abntrefinfo{Barros}{BARROS}{2014}
 {BARROS, J. J.~R.
 \textbf{Efeitos da interferência gerada por fornos de micro-ondas nas redes sem fio IEEE 802.11b/g/n}.
 Disserta\c{c}\~{a}o (Mestrado) --- Instituto Federal de Educação, Ciência e Tecnologia da Paraíba, João Pessoa, Oct 2014.}
+
+\bibitem[beagleboard 2023]{beaglebone}
+\abntrefinfo{beagleboard}{BEAGLEBOARD}{2023}
+{BEAGLEBOARD. \textbf{What is BeagleBone Black?} 2023.
+Dispon{\'\i}vel em: \url{https://beagleboard.org/black}. Acesso em: 18 mai. 2023.}
 
 \bibitem[Cabral 2001]{cabral}
 \abntrefinfo{Cabral}{CABRAL}{2001}
@@ -46,6 +56,16 @@ Dispon{\'\i}vel em: \url{https://datareportal.com/reports/digital-2023-global-ov
 \bibitem[Matheus et al. 2017]{matheus2017comunicaccao}
 \abntrefinfo{Matheus et al.}{MATHEUS et al.}{2017}
 {MATHEUS, L. et al. Comunica{\c{c}}{\~a}o por luz vis{\'\i}vel: conceito, aplicações e desafios. In:  \textbf{Livro de Minicursos SBRC}. Minas Gerais: Sociedade Brasileira de Computação, 2017. cap.~6, p. 247--296.}
+
+\bibitem[Monteiro e Hranilovic 2014]{monteiro}
+\abntrefinfo{Monteiro e Hranilovic}{MONTEIRO; HRANILOVIC}{2014}
+{MONTEIRO, E.; HRANILOVIC, S. Design and implementation of color-shift keying for visible light communications.
+\textbf{Journal of Lightwave Technology}, v.~32, n.~10, p. 2053--2060, 2014.}
+
+\bibitem[Negus 2014]{negus}
+\abntrefinfo{Negus}{NEGUS}{2014}
+{NEGUS, C. \textbf{Linux a Bíblia. O Mais Abrangente e Definitivo Guia Sobre Linux}. [S.l.]: Alta Books, 2014.
+ISBN 978-8576087991.}
 
 \bibitem[Neto et al. 2021]{SBC_edu}
 \abntrefinfo{Neto et al.}{NETO et al.}{2021}
