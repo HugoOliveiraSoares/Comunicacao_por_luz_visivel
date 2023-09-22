@@ -1,4 +1,5 @@
-\documentclass[12pt,
+\documentclass[article,
+12pt,
 a4paper,
 openany,
 oneside,
@@ -22,6 +23,9 @@ brazil,
   ]{abntex2cite}	% CITAÇÕES PADRÃO ABNT
 \usepackage{fontspec}
 \usepackage{url}
+\usepackage{fancyhdr}
+
+
 \setmainfont{Arial}
 
 % O tamanho do parágrafo(recuo) é dado por:
@@ -35,7 +39,7 @@ brazil,
       pdftitle={\@title}, 
 		  pdfauthor={\@author},
 	    pdfcreator={Hugo Soares},
-      pdfkeywords={VLC}{Visible Light Communication}{SBC}{Dom Helder}{OpenVLC},
+      pdfkeywords={VLC }{Visible Light Communication }{SBC }{Dom Helder }{OpenVLC},
   		colorlinks=true,
     	citecolor=black,
       linkcolor=black,
@@ -43,27 +47,21 @@ brazil,
 	    bookmarksdepth=4
 }
 
-\renewcommand\printchaptertitle[1]{%
-    \chaptitlefont%
-    \ifthenelse{\boolean{abntex@innonumchapter}}{\ABNTEXchapterupperifneeded{#1}}{%
-    \ifthenelse{\boolean{abntex@apendiceousecao}}{%
-        \centering%
-        \settowidth{\chapternamenumlength}{\printchaptername\printchapternum\afterchapternum}%
-        \ABNTEXchapterupperifneeded{#1}%
-      }{%
-        \settowidth{\chapternamenumlength}{\printchaptername\printchapternum\afterchapternum}%
-        \parbox[t]{\columnwidth-\chapternamenumlength}{\ABNTEXchapterupperifneeded{#1}}}%
-     }   
-}
 
 \captionsetup{justification=raggedright,singlelinecheck=false}
 
 \titulo{Comunicação por luz visível: \\ Construindo um protótipo usando SBC e explorando o potencial da tecnologia VLC}
-\autor{Hugo Oliveira Soares}
+
+\autor{
+  Hugo Oliveira Soares \thanks{Graduando em Ciência da Computação, Escola Superior Dom Helder, \href{mailto:e01381@ academico.domhelder.edu.br}{e01381@academico.domhelder.edu.br}}
+  \\[0.5cm]
+  Marden Cicarelli Pinheiro\thanks{Mestre em Tecnologia da informação(CEFET), docente do curso Ciência da Computação, Escola Superior Dom Helder Câmara, marden.cicarelli@academico.domhelder.edu.br}
+  \\[0.5cm]
+  Ricardo Luiz de Freitas\thanks{Mestre em Administração (FUMEC), docente do curso de Ciência da Computação, Escola Superior Dom Helder, \href{mailto:ricardo.freitas@academico.domhelder.edu.br}{ricardo.freitas@academico.domhelder.edu.br}}
+}
+
 \local{Belo Horizonte}
 \instituicao{DOM HELDER ESCOLA SUPERIOR}
-\orientador{Prof. Marden Cicarelli Pinheiro}
-\coorientador{Prof. Ricardo Luiz de Freitas}
 \preambulo{
   Projeto de Pesquisa apresentado à Dom Helder Escola Superior como requisito parcial para obtenção do título de Cientista da Computação.
   \newline 
@@ -75,26 +73,17 @@ brazil,
 }
 \data{2023}
 
+\makeindex
+
 \begin{document}
 
-  % PARTE PRÉ-TEXTUAL
-  \pagenumbering{roman}
-  \pretextual
-  \include{capa} 
-  \imprimircapa
-  \clearpage
-  \include{folharosto}
-  \imprimirfolhaderosto
 
-  \listoffigures % Lista de imagens
-  % \include{siglas} % Lista de abreviaturas e siglas
-  \clearpage
-  \tableofcontents %SUMARIO
-  % \clearpage
+  % PARTE PRÉ-TEXTUAL
+  % \maketitle
 
   % PARTE TEXTUAL
   \pagenumbering{arabic}
-  \textual
+
   %% CAPITULOS
   \include{capitulos/introducao}
   \include{capitulos/objetivos}

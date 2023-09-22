@@ -1,4 +1,4 @@
-\chapter{Metodologia}
+\section{Metodologia}
 
 Segundo \citeonline{wiltgen2019prototipos}, um protótipo é uma representação similar ao produto a ser desenvolvido, criado com o intuito de realizar testes e ensaios para que as funcionalidades se comportem como esperado no ambiente de uso. Nesse contexto, o objetivo principal deste trabalho é implementar um protótipo de um sistema VLC utilizando um SBC como plataforma de desenvolvimento. Durante o desenvolvimento foram utilizados elementos de metodologias ágeis como os do \textit{Scrum} e do \textit{Kanban}.
 
@@ -8,13 +8,13 @@ O \textit{Kanban} é uma estrutura que permite a visualização dos itens de tra
 
 Para a avaliação do desempenho das SBCs selecionadas foram coletadas as informações de uso do processador, o uso de memória RAM e também a taxa de erros durante a transmissão de um pacote de dados.
 
-\section{Single Board Computer (SBC)}
+\subsection{Single Board Computer (SBC)}
 
 \textit{Single Board Computer} (SBC) é um computador onde todos os componentes necessários estão em uma mesma placa de circuito impresso. Esse tipo de dispositivo é muito utilizado para fins educacionais, para desenvolvimento de sistemas, datacenters (centros  de  processamento  de  dados) e clusters portáteis. Alguns exemplos são o \textit{OrangePI}, \textit{RockPI}, \textit{BeagleBone} e \textit{RaspberryPI}, sendo este um dos mais populares \cite{SBC_edu}.
 
 Os SBCs geralmente são de baixo custo, porém devido a escassez global de semicondutores reduziu a sua disponibilidade e por consequência levou ao aumento dos preços \cite{zeng_2022}. Principalmente do \textit{RaspberryPI} que passou de 45 dólares para 161 dólares, por esse motivo o SBC \textit{OrangePI} foi selecionado para o desenvolvimento deste trabalho.
 
-\subsection{RaspberryPI}
+\subsubsection{RaspberryPI}
 
 A \textit{Raspberry Pi Foundation} foi fundada em 2008 sediada no Reino Unido com o objetivo de promover o avanço na educação no campo da computação. \cite{rasp}
 
@@ -27,7 +27,7 @@ O \textit{RaspberryPI} é um pequeno computador que traz consigo um processador 
   \label{figura:rasp}
 \end{figure}
 
-\subsection{OrangePI}
+\subsubsection{OrangePI}
 
 O \textit{OrangePI} é um SBC \textit{open source} da Shenzhen Xunlong Software. A arquitetura de seu processador é ARM e a plataforma suporta vários sistemas operacionais como Android e as várias distribuições de linux \cite{orangepi}.\newline
 
@@ -40,7 +40,7 @@ O \textit{OrangePI} é um SBC \textit{open source} da Shenzhen Xunlong Software.
 
 \newpage
 
-\subsection{BeagleBone Black}
+\subsubsection{BeagleBone Black}
 
 \textit{BeagleBone Black} é uma plataforma suportada pela comunidade que roda Linux para prototipagem rápida \cite{beaglebone}.
 Esta plataforma é utilizada pelo projeto OpenVLC. \newline
@@ -52,7 +52,7 @@ Esta plataforma é utilizada pelo projeto OpenVLC. \newline
   \label{figura:beagle}
 \end{figure}
 
-\section{Linux}
+\subsection{Linux}
 
 Linux é um sistema operacional de computadores, o autor \citeonline{negus} cita em seu livro Linux a Bíblia que este sistema é um exemplo de como projetos colaborativos podem ultrapassar o que empresas individuais podem fazer.
 
