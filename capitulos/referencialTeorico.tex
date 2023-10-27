@@ -59,13 +59,13 @@ Mesmo que a tecnologia VLC seja inovadora e que apresenta vantagens também exis
 
 \subsection{Modulação}
 
-\subsubsection{On-Off Keying (OOK)}
+\subsubsection{\textit{On-Off Keying} (OOK)}
 
-Esta forma de modulação transmite os bits acendendo e apagando a lâmpada, mas também é possível somente reduzir a intensidade da luz para representar o bit 0, já que no caso de se houver a transmissão de um byte \emph{100001}, por exemplo, a lâmpada ficaria desligada por muito tempo, assim afetando a percepção do usuário \cite{matheus2017comunicaccao}.
+Esta forma de modulação transmite os bits acendendo e apagando a lâmpada, mas também é possível somente reduzir a intensidade da luz para representar o bit 0, já que no caso de se houver a transmissão de um byte 100001, por exemplo, a lâmpada ficaria desligada por muito tempo, assim afetando a percepção do usuário \cite{matheus2017comunicaccao}.
 
-\subsubsection{Color Shift Keying (CSK)}
+\subsubsection{\textit{Color Shift Keying} (CSK)}
 
-O sinal é modulado através da intensidade de 3 cores, sendo elas vermelho, verde e azul, essas três cores juntas geram a luz branca. Como cita \citeauthoronline{matheus2017comunicaccao} a modulação OOK possui taxas de envio muito baixas por isso esta modulação foi proposta especificamente para o VLC \cite{matheus2017comunicaccao}. 
+O sinal é modulado através da intensidade de 3 cores, sendo elas vermelho, verde e azul, essas três cores juntas geram a luz branca. Como cita \citeonline{matheus2017comunicaccao} a modulação OOK possui taxas de envio muito baixas por isso esta modulação foi proposta especificamente para o VLC. 
 
 A modulação é feita relacionando cada bit a uma cor das coordenadas CIE 1931, \citeauthoronline{Abraham_2016} explica que é um sistema de correspondência de cores que permite especificar numericamente uma cor com o objetivo de reproduzi-la com precisão. Existem 7 bandas de comprimento que podem ser selecionadas para determinar as vértices de um triângulo no qual os pontos da constelação dos símbolos CSK estão. Cada ponto selecionado determina a intensidade da cor no led RGB \cite{matheus2017comunicaccao}. \newline
 
@@ -104,7 +104,7 @@ O \textit{OpenVLC} é uma plataforma \textit{open source} baseada em  Linux e na
     \legend{Fonte: \citeonline{wikipedia2023}}
 \end{figure}
 
-\subsubsection{Comunicação Start-Stop}
+\subsubsection{Comunicação \textit{Start-Stop}}
 
 É um protocolo para comunicação serial de forma assíncrona, onde a sincronização é obtida por bits de \emph{START} e \emph{STOP}, que indicam o início e o fim da transmissão respectivamente \cite{comunicaoSerial}
 
