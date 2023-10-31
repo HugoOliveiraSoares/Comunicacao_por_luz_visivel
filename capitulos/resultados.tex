@@ -1,12 +1,10 @@
 \section{Resultados}
 
-% 10 kbits/s
-
 No presente capítulo, são apresentados os resultados obtidos, a partir da observação do funcionamento do protótipo construído. Serão apresentados imagens demonstrando o funcionamento e além disso serão destacados os desafios enfrentados durante o processo e as estratégias adotadas para mitigá-los.
 
 \subsection{Resultados}
 
-Ao implementar o protocolo \textit{start-stop} o primeiro resultado obtido foram caracteres recebidos diferentes do enviado. A causa do erro foi o tempo de leitura do receptor que ao ler o codigo de start, que é representado pelo byte 11111110, o ultimo bit estava sendo considerado como parte da mensagem.
+Ao implementar o protocolo \textit{start-stop} o primeiro resultado obtido foram caracteres recebidos diferentes do enviado. A causa do erro foi o tempo de leitura do receptor que ao ler o código de start, que é representado pelo byte 11111110, o último bit estava sendo considerado como parte da mensagem.
 
 \begin{figure}[!htbp]
   \caption{As informações mostradas pelo emissor e receptor não correspondem}
@@ -22,7 +20,7 @@ Ao implementar o protocolo \textit{start-stop} o primeiro resultado obtido foram
   \label{comparaca_msg_emissor_recptor_erro}
 \end{figure}
 
-Corrigindo o erro de temporização a transmissão ocorre sem falhas, os 5 bytes são enviados corretamente. A taxa de transmissão foi de 10 bits/s. Não foi possivel atingir taxas maiores pois a SBCs não consegue atingir leituras mais rapidas e o circuito também tem um tempo de resposta não muito favoravel.
+Após a correção do problema de temporização, os cinco bytes são enviados sem erros. A taxa de transmissão atingida foi de 10 bits por segundo. Não foi viável aumentar a taxa devido às limitações da \textit{Single Board Computer} (SBC), que não suporta leituras mais rápidas, e também devido ao tempo de resposta desfavorável do circuito com o ldr.
 
 \begin{figure}[!htbp]
   \caption{Transmissão correta da mensagem}
@@ -31,6 +29,17 @@ Corrigindo o erro de temporização a transmissão ocorre sem falhas, os 5 bytes
   \label{vlc_funcionando}
 \end{figure}
 
-\newpage
+\begin{figure}[!htbp]
+  \caption{Foto do prototipo funcionando}
+  \includegraphics[width=0.6\textwidth]{images/vlc_funcionamento.jpg}
+  \legend{Fonte: Autor (2023)}
+  \label{vlc_funcionando_foto}
+\end{figure}
 
-\subsection{Desafios}
+
+\subsection{Dificuldades}
+
+Durante o desenvolvimento do protótipo encontrou-se diversos pontos de dificuldade. Dentre eles está o fato do projeto da SBC \textit{OrangePi} não ser muito maduro, resultando em pouca documentação para a biblioteca \textit{wiringOP}, responsável por manipular as GPIOs.
+
+Outro ponto é o fato da SCB não possuir um conversor analógico-digital (ADC), sendo necessário montar um circuito para isso. A solução utilizada foi uma muito simples, um potenciômetro ligado em série com um ldr, mas permite estabelecer uma faixa de corte e a leitura de se está claro ou escuro, ou em outras palavras se é 1 ou 0.
+
