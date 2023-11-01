@@ -1,0 +1,13 @@
+\section{Conclusão}
+
+O objetivo desta pesquisa centrava-se em construir um protótipo de um sistema que se comunica usando a tecnologia do VLC, ou seja, permite que dois dispositivos se comuniquem usando a luz visível. Como o VLC opera no espectro da luz visível ele não interfere em equipamentos eletrônicos e também não é afetado por eles, podendo ser utilizado em locais onde ondas de rádio não são a melhor solução \cite{matheus2017comunicaccao}.
+
+Com o intuito de atingir este objetivo foi necessário revisar o trabalho de outros autores e colocar em prática aquilo que foi estudado. Para isso construiu-se um \textit{software} capaz de modular 5 \textit{bytes} em luz e outro capaz de demodular a informação em forma de luz em \textit{bytes} novamente, obtendo uma comunicação bem sucedida e com taxa de transmissão de 10 \textit{bits} por segundo.
+
+Durante o desenvolvimento enfrentou-se diversos pontos que dificultaram a construção do protótipo, como o projeto da SBC \textit{OrangePi} não ser muito maduro não possuindo muita documentação sobre a sua biblioteca para manipular as GPIOs. Outro ponto é o uso de um circuito muito simples e de baixa responsividade a variação de luz, para receber o sinal.
+
+Diante desses pontos, pode-se concluir que para a comunicação alcançar maiores taxas de transferência a implementação de um hardware específico para a modulação e demodulação do sinal representaria um avanço significativo. A utilização de um microcontrolador dedicado a essas funções, comunicando-se via serial com a SBC, promoveria uma transmissão mais eficiente.
+
+Ao alcançar o objetivo de construir o protótipo, demonstra a viabilidade da existência da tecnologia abrindo uma perspectiva promissora para solucionar os problemas de congestionamento do espectro eletromagnético e da interferência gerada por dispositivos elétricos. 
+
+
