@@ -8,7 +8,6 @@ brazil,
 
 \usepackage[brazil]{babel}
 \usepackage[
-  headsep=0.5cm,
   left=3cm,
   top=3cm,
   right=2cm,
@@ -82,15 +81,16 @@ brazil,
   \pagenumbering{arabic}
 
   %% CAPITULOS
-  \include{capitulos/introducao}
-  \include{capitulos/objetivos}
-  \include{capitulos/justificativa}
-  \include{capitulos/referencialTeorico}
-  \include{capitulos/metodologia}
-  \include{capitulos/resultados_esperados}
-  \include{capitulos/prototipo}
-  \include{capitulos/resultados}
-  \include{capitulos/conclusao}
+  \input{capitulos/introducao}
+  \input{capitulos/objetivos}
+  \input{capitulos/justificativa}
+  \input{capitulos/referencialTeorico}
+  \input{capitulos/metodologia}
+  \input{capitulos/resultados_esperados}
+  \input{capitulos/prototipo}
+  \input{capitulos/resultados}
+  \input{capitulos/conclusao}
+  \pagebreak
 
   % Referencias
   \bibliography{referencias}
