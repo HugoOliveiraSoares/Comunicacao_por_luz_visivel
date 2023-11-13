@@ -20,7 +20,7 @@ Ao implementar o protocolo \textit{start-stop} o primeiro resultado obtido foram
   \label{comparaca_msg_emissor_recptor_erro}
 \end{figure}
 
-Após a correção do problema de temporização, os cinco bytes são enviados sem erros. A taxa de transmissão atingida foi de 10 bits por segundo. Não foi viável aumentar a taxa devido às limitações da \textit{Single Board Computer} (SBC), que não suporta leituras mais rápidas, e também devido ao tempo de resposta desfavorável do circuito com o ldr.
+Após a correção do problema de temporização e uma troca dos bytes de \textit{start} e \textit{stop}, que passaram a ser 00000001 e 10000000, os cinco bytes são enviados sem erros. A taxa de transmissão atingida foi de 10 bits por segundo. Não foi viável aumentar a taxa devido às limitações da \textit{Single Board Computer} (SBC), que não suporta leituras mais rápidas, e também devido ao tempo de resposta desfavorável do circuito com o ldr.
 
 \begin{figure}[!htbp]
   \caption{Transmissão correta da mensagem}
@@ -30,7 +30,7 @@ Após a correção do problema de temporização, os cinco bytes são enviados s
 \end{figure}
 
 \begin{figure}[!htbp]
-  \caption{Foto do prototipo funcionando}
+  \caption{Foto do protótipo funcionando}
   \includegraphics[width=0.6\textwidth]{images/vlc_funcionamento.jpg}
   \legend{Fonte: Autor (2023)}
   \label{vlc_funcionando_foto}
