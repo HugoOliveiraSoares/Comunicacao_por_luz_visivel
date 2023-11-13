@@ -6,7 +6,7 @@ Este capítulo detalha o funcionamento do protótipo desenvolvido durante a pesq
 
 \subsubsection{Emissor}
 
-O circuito que permite ``transformar”  os bits em luz é composto por um led de alto brilho, um transistor TIP122, dois resistores e uma bateria.
+O circuito que permite transformar os bits em luz é composto por um led de alto brilho, um transistor TIP122, dois resistores e uma bateria.
 
 O transistor é ligado como chave na SBC para permitir acionar cargas elétricas da qual a SBC não seria capaz, pois pode fornecer no máximo 16 mA (miliampère) \citeonline{correnteSbc} e como o \textit{led} de alto brilho consome uma corrente de 18.8mA, uma ligação direta na \textit{General Purpose Input/Output} (GPIO) poderia queimar a SBC.
 
@@ -36,7 +36,7 @@ O transistor é ligado como chave na SBC para permitir acionar cargas elétricas
 
 O circuito para receber as informações do emissor é composto por um \textit{Light Dependent Resistor} (LDR) e um potenciômetro ligado em série. Este circuito permite estabelecer uma faixa de corte de acordo com o nível de luminosidade do ambiente.
 
-Estabelecido a faixa de corte ajustando o potenciômetro é possível ``perceber” quando se está em nível lógico alto (bit 1) ou em nível lógico baixo (bit 0). O motivo para a montagem deste cirtuito é o fato da SBC não possuir um conversor analógico-digital (ADC), impossibilitando a leitura de valores analogicos e assim estabelecer a faixa de corte.
+Estabelecido a faixa de corte ajustando o potenciômetro é possível perceber quando se está em nível lógico alto (bit 1) ou em nível lógico baixo (bit 0). O motivo para a montagem deste cirtuito é o fato da SBC não possuir um conversor analógico-digital (ADC), impossibilitando a leitura de valores analogicos e assim estabelecer a faixa de corte.
 
 
 \begin{figure}[!htbp]
@@ -57,9 +57,9 @@ Estabelecido a faixa de corte ajustando o potenciômetro é possível ``perceber
 
 \subsection{\textit{Software}}
 
-O código foi implementado nas SBCs usando a biblioteca \textit{wiringPi} e \textit{wiringOP}, que é um \textit{fork} da \textit{wiringPi} para a \textit{OrangePi}. O \textit{software} implementa um protocolo de comunicação chamado de \textit{start-stop}, que consiste em uma forma de sinalizar o início e o fim de uma transmissão de dados. No início, é enviado um byte de \textit{"start"} indicando o início da transmissão seguido dos dados e por fim um byte de \textit{"stop"} indicando o fim.
+O código foi implementado nas SBCs usando a biblioteca \textit{wiringPi} e \textit{wiringOP}, que é um \textit{fork} da \textit{wiringPi} para a \textit{OrangePi}. O \textit{software} implementa um protocolo de comunicação chamado de \textit{start-stop}, que consiste em uma forma de sinalizar o início e o fim de uma transmissão de dados. No início, é enviado um byte de \textit{start} indicando o início da transmissão seguido dos dados e por fim um byte de \textit{stop} indicando o fim.
 
-O emissor transmite a mensagem ``\textit{Hello}” o que resulta em um pequeno pacote de 5 bytes. Para transmitir a mensagem é convertida em binário, seguindo a tabela ASCII, para depois ser passada para a função responsável por modular a mensagem. O metodo de modulação utilizada foi a \textit{On-Off Keying} (\autoref{subsec:ook})
+O emissor transmite a mensagem \textit{Hello} o que resulta em um pequeno pacote de 5 bytes. Para transmitir a mensagem é convertida em binário, seguindo a tabela ASCII, para depois ser passada para a função responsável por modular a mensagem. O metodo de modulação utilizada foi a \textit{On-Off Keying} (\autoref{subsec:ook})
 
 \begin{figure}[!htbp]
   \caption{Função responsável por converter a mensagem em binário}
